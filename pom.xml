@@ -379,15 +379,15 @@
 					</archive>
 				</configuration>
 			</plugin>
-			<!--<plugin>-->
-				<!--<groupId>org.apache.maven.plugins</groupId>-->
-				<!--<artifactId>maven-surefire-plugin</artifactId>-->
-				<!--<configuration>-->
-					<!--<skipTests>true</skipTests>-->
-					<!--<useSystemClassLoader>true</useSystemClassLoader>-->
-					<!--<forkMode>once</forkMode>-->
-					<!--<argLine>${argline}</argLine>-->
-					<!--<systemProperties>-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>true</skipTests>
+					<useSystemClassLoader>true</useSystemClassLoader>
+					<forkMode>once</forkMode>
+					<argLine>${argline}</argLine>
+					<systemProperties>
 						<!--&lt;!&ndash; common shared &ndash;&gt;-->
 						<!--<property>-->
 							<!--<name>transporter</name>-->
@@ -447,9 +447,9 @@
 							<!--<name>onerror</name>-->
 							<!--<value>${onerror}</value>-->
 						<!--</property>-->
-					<!--</systemProperties>-->
-				<!--</configuration>-->
-			<!--</plugin>-->
+					</systemProperties>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-deploy-plugin</artifactId>
